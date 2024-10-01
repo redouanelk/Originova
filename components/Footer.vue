@@ -1,10 +1,10 @@
 <template>
-  <section class="lg:pt-70 py-[48px] lg:pb-[64px] lg:px-[150px] px-10 flex flex-col gap-y-10">
-    <div class="lg:flex lg:flex-row lg:gap-x-[64px] mx-auto flex flex-col gap-y-[40px]">
+  <section class="lg:pt-70 py-[48px] lg:pb-[64px] lg:px-[150px] px-[22px] flex flex-col gap-y-10">
+    <div class="lg:flex lg:flex-row lg:gap-x-[64px] w-fit mx-auto flex flex-col gap-y-[40px]">
         <div class="lg:w-auto">
             <p class="font-bold text-34 text-antic-gray tracking-2 text-center lg:text-start">antic</p>
         </div>
-        <div class=" lg:grid md:grid md:grid-cols-4  lg:grid-cols-4 lg:gap-x-[48px] grid gap-y-10 lg:w-3/5 md:text-center">
+        <div class=" lg:grid md:grid md:grid-cols-4  lg:grid-cols-4 lg:gap-x-[48px] grid gap-y-10 lg:w-3/5 md:text-center md:gap-x-[100px]">
             <div class="lg:pt-2.5">
                 <p class="font-Varta font-semibold text-25 text-antic-gray mb-22">Products</p>
                 <ul class="grid gap-y-2.5 lg:gap-y-12 font-Varta text-antic-gray size-18">
@@ -60,7 +60,7 @@
             </a>
         </div>
     </div>
-    <div class="w-311 mx-auto md:w-full lg:w-full grid gap-y-10 lg:grid-rows-2 lg:gap-y-5">
+    <div class="w-fit mx-auto md:w-full lg:w-full grid gap-y-10 lg:grid-rows-2 lg:gap-y-5">
         <div class="flex justify-center gap-x-6 text-antic-gray opacity-90">
             <a href="#"><Icon name="fa6-brands:square-facebook" size="2rem"/></a>
             <a href="#"><Icon name="fa6-brands:square-twitter" size="2rem"/></a>

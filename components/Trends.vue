@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-white py-[48px] md:px-10 px-3 lg:px-0 flex flex-col gap-y-[64px]">
+  <section class="min-h-screen bg-white py-[48px] md:px-[22px] px-[22px] lg:px-0 flex flex-col gap-y-[64px]">
     <div class="grid gap-y-8 lg:grid lg:grid-cols-2 lg:justify-start lg:w-full lg:px-[150px]">
         <div class="grid gap-y-2 lg:gap-0">
             <p class="text-antic-black text-35">Be aware of the latest trends</p>
@@ -22,7 +22,7 @@
                 :breakpoints="{
                     '640': {
                         slidesPerView: 2,
-                        spaceBetween: 10,
+                       
                     },
                     '768': {
                         slidesPerView: 2.5,
@@ -52,13 +52,13 @@
                 ref="swiperRef"
             >   
             
-                <SwiperSlide v-for="(image, index) in trends" :key="index">
-                    <NuxtImg :src="`/trends/${image.img}`"  width="458" class="h-550 object-cover hidden md:flex lg:flex" format="webp"/>
+                <SwiperSlide v-for="(image, index) in trends" :key="index">     
+                    <NuxtImg :src="`/trends/${image.img}`" class="w-full aspect-[1/2] object-cover object-center hidden md:flex lg:flex" format="webp"/>
                 </SwiperSlide>
-                <div class="grid grid-cols-2 gap-5 w-full mx-auto justify-center lg:hidden md:hidden">
+                <div class="grid grid-cols-2 gap-5 w-fit mx-auto justify-center lg:hidden md:hidden">
                     <SwiperSlide v-for="(image, index) in trends" :key="index" class="">
-                        <div class="grid gap-y-5">
-                            <NuxtImg :src="`/trends/${image.img}`" width="145" class="h-[175px] object-cover"/>
+                        <div class="grid gap-y-[15px]">
+                            <NuxtImg :src="`/trends/${image.img}`" class="h-[175px] aspect-[2/1] object-cover object-center" format="webp"/>
                             <p class="font-Lato text-[15px] text-antic-black">{{image.title}}</p>
                         </div>
                     </SwiperSlide>
@@ -67,7 +67,7 @@
 
             </Swiper>
         </div>
-        <div class="lg:grid lg:grid-cols-3 lg:pt-10 justify-center lg:gap-x-[100px]">
+        <div class="lg:grid lg:grid-cols-3 justify-center lg:gap-x-[100px]">
             <div>
                 <p class="font-light text-antic-gray text-35 lg:text-45 pb-5 lg:pb-0">Inspirations</p>
             </div>
