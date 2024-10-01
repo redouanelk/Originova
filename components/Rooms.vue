@@ -66,7 +66,7 @@
     </div>
   
     <div class="lg:min-h-fit lg:py-[64px] container  md:pt-12 pt-12">
-        <div class=" lg:w-auto lg:h-auto flex flex-col md:flex-col lg:flex lg:flex-row justify-between gap-x-9 md:gap-y-10">
+        <div class=" lg:w-auto lg:h-auto flex flex-col md:flex-col lg:flex lg:flex-row justify-between gap-x-9 gap-y-[41px]">
             <div class="grid place-content-start md:w-full lg:w-1/2 lg:h-fit">
                 <div class="w-auto md:w-[600px] lg:w-auto ">
                     <p class="lg:font-light text-35 lg:text-55 text-antic-gray lg:w-[546px] leading-[60px]">We stay by your side to design your projects</p>
