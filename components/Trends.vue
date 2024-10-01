@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-white py-[48px] md:px-3 px-3 lg:px-0 flex flex-col gap-y-[64px]">
+  <section class="min-h-screen bg-white py-[48px] md:px-10 px-3 lg:px-0 flex flex-col gap-y-[64px]">
     <div class="grid gap-y-8 lg:grid lg:grid-cols-2 lg:justify-start lg:w-full lg:px-[150px]">
         <div class="grid gap-y-2 lg:gap-0">
             <p class="text-antic-black text-35">Be aware of the latest trends</p>
@@ -26,11 +26,23 @@
                     },
                     '768': {
                         slidesPerView: 2.5,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                     '1024': {
                         slidesPerView: 2.5,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
+                    },
+                    '1300':{
+                        slidesPerView: 3.5,
+                        spaceBetween:20,
+                    },
+                    '1800':{
+                        slidesPerView: 4,
+                        spaceBetween:20,
+                    },
+                    '2000':{
+                        slidesPerView: 4.5,
+                        spaceBetween:20,
                     }
                 }"
                 :modules="modules"
@@ -43,21 +55,21 @@
                 <SwiperSlide v-for="(image, index) in trends" :key="index">
                     <NuxtImg :src="`/trends/${image.img}`"  width="458" class="h-550 object-cover hidden md:flex lg:flex" format="webp"/>
                 </SwiperSlide>
-                <div class="grid grid-cols-2 gap-5 w-fit mx-auto justify-center lg:hidden md:hidden">
-                <SwiperSlide v-for="(image, index) in trends" :key="index" class="">
-                    <div class="grid gap-y-5">
-                        <NuxtImg :src="`/trends/${image.img}`" width="200" class="h-175 object-cover"/>
-                        <p class="font-Lato text-[15px] text-antic-black">{{image.title}}</p>
-                    </div>
-                </SwiperSlide>
-            </div>
+                <div class="grid grid-cols-2 gap-5 w-full mx-auto justify-center lg:hidden md:hidden">
+                    <SwiperSlide v-for="(image, index) in trends" :key="index" class="">
+                        <div class="grid gap-y-5">
+                            <NuxtImg :src="`/trends/${image.img}`" width="145" class="h-[175px] object-cover"/>
+                            <p class="font-Lato text-[15px] text-antic-black">{{image.title}}</p>
+                        </div>
+                    </SwiperSlide>
+                </div>
          
 
             </Swiper>
         </div>
-        <div class="lg:grid lg:grid-cols-3 lg:pt-10 justify-center lg:container lg:gap-x-[100px]">
+        <div class="lg:grid lg:grid-cols-3 lg:pt-10 justify-center lg:gap-x-[100px]">
             <div>
-                <p class="font-light text-antic-gray text-35 lg:text-45">Inspirations</p>
+                <p class="font-light text-antic-gray text-35 lg:text-45 pb-5 lg:pb-0">Inspirations</p>
             </div>
             <div>
                 <p class="font-Varta text-18 text-antic-gray">

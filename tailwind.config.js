@@ -85,6 +85,9 @@ export default {
         '55':'55px',
         '34':'34px',
         '35':"35px"
+      },
+      aspectRatio:{
+        
       }
     },
     fontFamily: {
