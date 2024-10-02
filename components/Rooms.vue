@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:min-h-screen lg:py-0 lg:pt-16 pb-12 md:px-[22px] px-[22px] lg:px-[150px]">
+  <section class="lg:min-h-fit lg:py-0 lg:pt-16 pb-12 md:px-[22px] px-[22px] lg:px-[150px]">
     <div class="lg:w-auto lg:pb-70 lg:py-0 py-12">
         <div class="flex justify-start md:justify-start lg:justify-start w-full text-35 lg:text-55 lg:text-start text-antic-gray font-normal">Find your room</div>
         <div class="lg:grid lg:grid-cols-5 pt-5 w-full lg:pt-12 flex flex-col gap-y-[33px]">
@@ -65,7 +65,7 @@
         
     </div>
   
-    <div class="lg:min-h-fit lg:py-[64px] container  md:pt-12 pt-12">
+    <div class="lg:min-h-fit lg:py-[64px]  md:pt-12 pt-12">
         <div class=" lg:w-auto lg:h-auto flex flex-col md:flex-col lg:flex lg:flex-row justify-between gap-x-9 gap-y-[41px]">
             <div class="grid place-content-start md:w-full lg:w-1/2 lg:h-fit">
                 <div class="w-auto md:w-[600px] lg:w-auto ">
