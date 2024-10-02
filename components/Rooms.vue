@@ -51,11 +51,11 @@
         <div class="flex gap-x-[30px] mt-12 lg:flex-row flex-row-reverse lg:justify-start justify-between md:justify-start md:flex-row">
             <p class="font-Varta text-antic-gray opacity-90 text-18 md:w-auto lg:w-[165px]"> {{ currentSlide }} / {{ totalSlides }}</p>
             <div class="flex flex-row gap-x-4">
-                <div @click="sswiper.slideNext()" class="swiper-btn-prev flex gap-x-4 cursor-pointer">
+                <div class="swiper-btn-prev flex gap-x-4 cursor-pointer">
                     <Icon name="fa:chevron-left" class="mt-[7.5px] text-antic-dark" size="12px"/>
                     <p class=" text-antic-dark font-Karla text-17 font-black lg:font-bold">Prev</p>
                 </div>
-                <div @click="sswiper.slideNext()" class="swiper-btn-next flex gap-x-4 cursor-pointer">
+                <div class="swiper-btn-next flex gap-x-4 cursor-pointer">
                     <p class=" text-antic-dark font-Karla text-17 font-black lg:font-bold">Next</p>
                     <Icon name="fa:chevron-right" class="mt-[7.5px] text-antic-dark" size="12px"/>
                 </div>

@@ -1,10 +1,10 @@
 <template>
   <section class="lg:pt-70 py-[48px] lg:pb-[64px] lg:px-[150px] px-[22px] flex flex-col gap-y-10">
-    <div class="lg:flex lg:flex-row lg:gap-x-[64px] w-fit mx-auto flex flex-col gap-y-[40px]">
+    <div class="lg:flex lg:flex-row lg:justify-between lg:gap-x-[64px] w-fit mx-auto flex flex-col gap-y-[40px]">
         <div class="lg:w-auto">
             <p class="font-bold text-34 text-antic-gray tracking-2 text-center lg:text-start">antic</p>
         </div>
-        <div class=" lg:grid md:grid md:grid-cols-4  lg:grid-cols-4 lg:gap-x-[48px] grid gap-y-10 lg:w-3/5 md:text-center md:gap-x-[100px]">
+        <div class=" lg:grid md:flex md:flex-row md:justify-between lg:grid-cols-4 lg:gap-x-[48px] grid gap-y-10 lg:w-3/5 md:text-center">
             <div class="lg:pt-2.5">
                 <p class="font-Varta font-semibold text-25 text-antic-gray mb-22">Products</p>
                 <ul class="grid gap-y-2.5 lg:gap-y-12 font-Varta text-antic-gray size-18">
