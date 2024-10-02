@@ -140,8 +140,8 @@ setup() {
     const images =ref([
         {title:"Bedroom",img:"bed-room.png", custom:"bed-room-placeholder.jpg"},
         {title:"Living room",img:"living-room.jpeg", custom:"living-room-placeholder.jpg"},
-        {title:"Library",img:"library.jpg", custom:"bed-room-placeholder.jpg"},
-        {title:"Kitchen",img:"kitchen.jpg", custom:"bed-room-placeholder.jpg"},
+        {title:"Library",img:"library.jpg", custom:"library-placeholder.jpg"},
+        {title:"Kitchen",img:"kitchen.jpg", custom:"kitchen-placeholder.jpg"},
     ])
     const swiperRef = ref(null)
     const currentSlide = ref(null)

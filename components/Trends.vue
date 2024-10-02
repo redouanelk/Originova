@@ -53,12 +53,12 @@
             >   
             
                 <SwiperSlide v-for="(image, index) in trends" :key="index">
-                    <NuxtImg :src="`/trends/${image.img}`" class="w-[460px] aspect-[0.9] object-cover object-bottom hidden md:flex lg:flex" format="webp"/>   
+                    <NuxtImg :src="`/trends/${image.img}`" :placeholder="`/trends/${image.custom}`" class="w-[460px] aspect-[0.9] object-cover object-bottom hidden md:flex lg:flex" format="webp"/>   
                 </SwiperSlide>
                 <div class="grid grid-cols-2 gap-5 w-fit mx-auto justify-center lg:hidden md:hidden">
                     <SwiperSlide v-for="(image, index) in trends" :key="index" class="">
                         <div class="grid gap-y-[15px]">
-                            <NuxtImg :src="`/trends/${image.img}`" class="w-[175px] aspect-[0.9] object-cover object-bottom" format="webp"/>
+                            <NuxtImg :src="`/trends/${image.img}`" :placeholder="`/trends/${image.custom}`" class="w-[175px] aspect-[0.9] object-cover object-bottom" format="webp"/>
                             <p class="font-Lato text-[15px] text-antic-black">{{image.title}}</p>
                         </div>
                     </SwiperSlide>
@@ -111,10 +111,10 @@ export default {
     },
     setup(){
         const trends = ref([
-            {title:'Chair',img:'chair.jpeg'},
-            {title:'Cooked',img:'kitchen.jpeg'},
-            {title:'Tables',img:'tables.jpeg'},
-            {title:'Living room',img:'living-room.jpeg'}
+            {title:'Chair',img:'chair.jpeg', custom:'chair-placeholder.jpg'},
+            {title:'Cooked',img:'kitchen.jpeg', custom:'cooked-placeholder.jpg'},
+            {title:'Tables',img:'tables.jpeg', custom:'tables-placeholder.jpg'},
+            {title:'Living room',img:'living-room.jpeg', custom:'living-room-placeholder.jpg'}
         ])
         const swiperRef = ref(null)
         const currentSlide = ref(null)
